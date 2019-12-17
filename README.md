@@ -3,11 +3,15 @@
 **What is Clonning?**
 <br>
 In plain words, Clonning is either making a copy of the existing block of memory or creating another reference that points to the existing block of memory.
+<br>
 **Note:** _Here "Block of memory" can be any defined Object in Javascript._
 
-**Why do we use Clonning ?**<br>
+**Why do we use Clonning ?**
+<br>
 To create a copy of Existing Object instead of creating the same object from the scratch.<br>
+
 Added Benifits:
+
 * To reduce our work in Manual-Copying.
 * To reduce errors, caused due to Manual-Copying.
 
