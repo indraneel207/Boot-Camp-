@@ -1,20 +1,21 @@
 # **_Clonning in Javascript_**
 
-**What is Clonning?**
+## **_What is Clonning?_**
 
 In plain words, Clonning is either making a copy of the existing block of memory or creating another reference that points to the existing block of memory.
 
-**Note:** _Here "Block of memory" can be any defined Object in Javascript._
+> **Note:** _Here "Block of memory" can be any defined Object in Javascript._
 
-**Why do we use Clonning ?**
+## **_Why do we use Clonning ?_**
 
-To create a copy of Existing Object instead of creating the same object from the scratch.<br>
+To create a copy of Existing Object instead of creating the same object from the scratch.
 
 Added Benifits:
+
 * To reduce our work in Manual-Copying.
 * To reduce errors, caused due to Manual-Copying.
 
-**What are the types of Clonning ?**
+## **_What are the types of Clonning ?_**
 
 In JS, Clonning is of two types :
 
@@ -27,6 +28,9 @@ In JS, Clonning is of two types :
     * Creates another copy of the existing Block of Memory (Object).
     * Separate memory is allocated.
     * Change in a block of memory(Object) does not affect other reference pointers as they both are different Blocks of Memory.
+![pic1](https://miro.medium.com/max/488/0*RGt-o4ovYiIt_9nS.)
+
+_Image to depict the differences between Shallow and Deep Clone._
 
 Consider this Example:
 ```js
@@ -47,13 +51,12 @@ console.log(shallowCopy.a);                 // output: 'a' Value Changed
 ```
 
 Here in this above example,
-When the value of 'a' is changed from a to 1 of source object, there is a change in the value of a in shallowcopy object but not in the deepCopy object. This is caused because the shallowCopy object was reffering to the same Source Object and hence the change was seen.
 
-![pic1](https://miro.medium.com/max/488/0*RGt-o4ovYiIt_9nS.)
+When the value of `a` is changed from `a` to `1` of `source object`, there is a change in the value of `a` in `shallowCopy` object but not in the `deepCopy` object. This is caused because the `shallowCopy` object was reffering to the same `source` Object and hence the change was seen.
 
-_Image to depict the differences between Shallow and Deep Clone._
 
-**What are the ways to Clone?**
+
+## **What are the ways to Clone?**
 
 Clonning can be done in JS either making it a shallow copy or a deep copy. The usual methods followed are:
 
